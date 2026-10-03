@@ -23,6 +23,9 @@ let promise3 = new Promise((resolve , reject)=>{
 
 Promise.all([promise1 , promise2, promise3]).then((data)=>{
 	output.innerHTML = `
+		<tr>
+	        <td colspan="2">Loading...</td>
+	    </tr>
         <tr>
             <td>Promise 1</td>
             <td>${data[0]}</td>
