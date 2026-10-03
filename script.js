@@ -25,17 +25,17 @@ Promise.all([promise1 , promise2, promise3]).then((data)=>{
 	output.innerHTML = `
         <tr>
             <td>Promise 1</td>
-            <td>${data[0]}</td>
+            <td>${data[0].toFixed(3)}</td>
         </tr>
 
         <tr>
             <td>Promise 2</td>
-            <td>${data[1]}</td>
+            <td>${data[1].toFixed(3)}</td>
         </tr>
 
         <tr>
             <td>Promise 3</td>
-            <td>${data[2]}</td>
+            <td>${data[2].toFixed(3)}</td>
         </tr>
 
         <tr>
